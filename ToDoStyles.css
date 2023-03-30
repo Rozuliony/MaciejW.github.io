@@ -239,6 +239,9 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 414px) {
+    body {
+        overflow: visible;
+    }
     footer {
         bottom: 0px;
     }
