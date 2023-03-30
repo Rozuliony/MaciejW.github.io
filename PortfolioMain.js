@@ -239,11 +239,9 @@ window.addEventListener("resize", reportWindowSize);
 function reportWindowSize() {
     let value = window.innerWidth;
     let scrollvalue = window.scrollY;
-    alert(value);
-    document.getElementById('footer').style.bottom = null;
     const ContainersText = document.querySelectorAll('.ContainerText');
     const ButtonsContent = document.querySelectorAll('.Buttons-Content');
-    if(value > 650) {document.getElementById('BiographyText').style.marginTop = value * 0.03 + "px"}
+    if(value > 650) {document.getElementById('BiographyText').style.marginTop = value * 0.03 + "px";    document.getElementById('footer').style.bottom = null;}
     else{document.getElementById('BiographyText').style.marginTop = "15%";}
     if (value < 420) {document.getElementById('BiographyText').style.marginTop = "50%";document.getElementById('BiographyText').style.marginLeft = "20%";}
     if(document.getElementById('Home').innerHTML === "Główna") {
