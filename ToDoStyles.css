@@ -240,7 +240,15 @@ footer a:hover {
 
 @media only screen and (max-width: 414px) {
     footer {
-        bottom: 385px;
+        bottom: 0px;
+    }
+    #FormContainer {
+        display: block;
+        width: 100%;
+    }
+    #ListContainer {
+        display: block;
+        width: 100%;
     }
     #AddTask {
         width: 60%;
@@ -254,5 +262,23 @@ footer a:hover {
     }
     #AddTask H2 {
         font-size: 2vw;
+    }
+    #TitleAlert p {
+        font-size: 70%;
+        padding: 8% 5% 5% 12%;
+    }
+    .CloseIcon {
+        top: 5px;
+        right: 5px;
+    }
+    .Icon {
+        padding-top: 4%;
+    }
+    #ContentAlert p {
+        font-size: 80%;
+        padding-top: 7%;
+    }
+    #ContentAlert {
+        margin: 5% auto;
     }
 }

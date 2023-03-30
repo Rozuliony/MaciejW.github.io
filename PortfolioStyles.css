@@ -654,9 +654,9 @@ footer {
         overflow-x: hidden;
     }
     footer {
-        height: 7vh;
-        padding-top: 5%;
-        font-size: 2vw;
+        height: 9vh;
+        padding-top: 2%;
+        font-size: 80%;
     }
     #BiographyText {
         margin-top: 50%;

@@ -6,6 +6,9 @@ function Home() {
     document.getElementById('ProjectsPage').style.display = "none";
     document.getElementById('ContactPage').style.display = "none";
     document.getElementById('BiographyPage').style.display = "none";
+    if(window.innerWidth < 420) {
+        document.getElementById('footer').style.bottom = null;
+    }
 }
 
 function AboutMe() {
@@ -14,6 +17,9 @@ function AboutMe() {
     document.getElementById('ProjectsPage').style.display = "none";
     document.getElementById('ContactPage').style.display = "none";
     document.getElementById('BiographyPage').style.display = "none";
+    if(window.innerWidth < 420) {
+        document.getElementById('footer').style.bottom = "0px";
+    }
 }
 
 function Projects() {
@@ -22,6 +28,9 @@ function Projects() {
     document.getElementById('ProjectsPage').style.display = "block";
     document.getElementById('ContactPage').style.display = "none";
     document.getElementById('BiographyPage').style.display = "none";
+    if(window.innerWidth < 420) {
+        document.getElementById('footer').style.bottom = "0px";
+    }
 }
 
 function Contact() {
@@ -30,16 +39,25 @@ function Contact() {
     document.getElementById('ProjectsPage').style.display = "none";
     document.getElementById('ContactPage').style.display = "block";
     document.getElementById('BiographyPage').style.display = "none";
+    if(window.innerWidth < 420) {
+        document.getElementById('footer').style.bottom = "0px";
+    }
 }
 
 function ShowBiography() { 
     document.getElementById('AboutMePage').style.display = "none";
     document.getElementById('BiographyPage').style.display = "block";
+    if(window.innerWidth < 420) {
+        document.getElementById('footer').style.bottom = "-200px";
+    }
 }
 
 function HideBiography() {
     document.getElementById('BiographyPage').style.display = "none";
     document.getElementById('AboutMePage').style.display = "block";
+    if(window.innerWidth < 420) {
+        document.getElementById('footer').style.bottom = "0px";
+    }
 }
 
 function ShowSettings() {
@@ -224,7 +242,7 @@ function reportWindowSize() {
     const ContainersText = document.querySelectorAll('.ContainerText');
     const ButtonsContent = document.querySelectorAll('.Buttons-Content');
     if(value > 650) {document.getElementById('BiographyText').style.marginTop = value * 0.03 + "px"}
-    else if (value < 420) {document.getElementById('BiographyText').style.marginTop = "24%";document.getElementById('BiographyText').style.marginLeft = "20%";}
+    else if (value < 420) {document.getElementById('BiographyText').style.marginTop = "27%";document.getElementById('BiographyText').style.marginLeft = "20%";}
     else{document.getElementById('BiographyText').style.marginTop = "15%";}
     if(document.getElementById('Home').innerHTML === "Główna") {
         document.getElementById('GmailContact').innerHTML = "Kliknij aby zobaczyć";
@@ -273,6 +291,8 @@ function reportWindowSize() {
     } else {
         document.getElementsByClassName('Buttons')[0].style.padding = "2vh";
         document.getElementsByClassName('Buttons')[1].style.padding = "2vh";
+    } if (value < 420) {
+        document.getElementById('FBContact').style.fontSize = "60%";
     }
 
   }
