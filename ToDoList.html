@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="/images/task.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToDo List</title>
+        <link href="ToDoStyles.css" type="text/css" rel="stylesheet">
+    </head>
+        <body>
+            <div id="FormContainer">
+                <div id="Form">
+                    <label for="Title" id="LabelTitle">Wpisz tytuł swojego zadania:</label>
+                    <input type="text" placeholder="Tytuł zadania..." name="Title" id="Title" required>
+                    <div id="TitleAlert" style="display: none">
+                        <div class="Icon">
+                            <img src="images/error.png" alt="Error Icon" class="ErrorIcon">
+                        </div>
+                        <p>Podany tytuł jest nieprawidłowy!</p>
+                        <img src="images/close.png" alt="Close Icon" class="CloseIcon">
+                    </div>
+                    <label for="Content" id="LabelContent">Wpisz co masz do zrobienia:</label>
+                    <textarea name="Content" id="Content" required>Zadanie do wykonania...</textarea>
+                    <div id="ContentAlert" style="display: none">
+                        <div class="Icon">
+                            <img src="images/error.png" alt="Error Icon" class="ErrorIcon">
+                        </div>
+                        <p>Wpisz treść zadania!</p>
+                        <img src="images/close.png" alt="Close Icon" class="CloseIcon">
+                    </div>
+                    <button id="AddTask" type="submit" onclick="AddTask()"><span></span><h2>Dodaj zadanie!</h2></button>
+                </div>
+            </div>
+            <div id="ListContainer">
+            </div>
+            <footer>
+                <span>Kliknij raz tytuł zadania, aby go przekreślić jako wykonane, kliknij dwukrotnie w tytuł zadania, aby usunąć to zadanie.
+                    <br>Aby wrócić na stronę portfolio <a href="Portfolio.html">kliknij tutaj!</a>
+                </span>
+            </footer>
+            <script src="ToDoMain.js"></script>
+        </body>
+</html>

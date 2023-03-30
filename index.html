@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maciej Wnuk</title>
+        <link rel="icon" href="/images/favicon-32x32.png?">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="PortfolioStyles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body id="Body" class="BodyLTheme">
+        <div id="Settings">
+            <div class="GearDiv" onclick="ShowSettings()">
+                <img src="/images/gear.png" alt="Settings" id="SettingsIcon">
+            </div>
+            <div class="Buttons " onclick="LightTheme()" style="margin-left: 2%;">
+                <span id="LightTheme" class="Buttons-Content"> Jasny Motyw</span>
+            </div>
+            <div class="Buttons " onclick="DarkTheme()">
+                <span id="DarkTheme" class="Buttons-Content">Ciemny Motyw</span>
+            </div>
+            <div  class="Buttons " onclick="EngLang()">
+                <span id="EngLang" class="Buttons-Content">Angielski</span>
+            </div>
+            <div class="Buttons " onclick="PolLang()" style="border-right:rgba(66, 68, 90, 70) solid 3px;">
+                <span id="PolLang" class="Buttons-Content">Polski</span>
+            </div>
+        </div>
+        <div id="ActualBody" class="ActualBodyLTheme">
+            <img id="Sun" src="images/sunshine.png" alt="Image of Sun">
+            <img id="Moon" src="images/moon.png" alt="Image of Moon">
+            <img class="Cloud" style="--t: 50px;--r: none;--l: -500px; " src="images/cloud.png" alt="Image of Cloud">
+            <img class="Cloud" style="--t: 250px;--r: -400px;--l: none;" src="images/cloud.png" alt="Image of Cloud">
+            <img class="Cloud" style="--t: 300px;--r: -300px;--l: none;" src="images/cloud.png" alt="Image of Cloud">
+            <img class="Cloud" style="--t: 560px;---r: none;--l: -450px;" src="images/cloud.png" alt="Image of Cloud">
+            <img class="Cloud" style="--t: 900px;--r: -300px;--l: none;" src="images/cloud.png" alt="Image of Cloud">
+            <p class="Headings" onclick="Home()">
+                <img class="HeadingLeftIcon HoverIcon" src="images/information-button.png">
+                <span id="Home">Główna</span>
+                <img class="HeadingRightIcon HoverIcon" src="images/information-button.png">
+            </p>
+            <p class="Headings" onclick="AboutMe()">
+                <img class="HeadingLeftIcon HoverIcon" src="images/user.png">
+                <span id="AboutMe">O mnie</span>
+                <img class="HeadingRightIcon HoverIcon" src="images/user.png">
+            </p>
+            <p class="Headings" onclick="Projects()">
+                <img class="HeadingLeftIcon HoverIcon" src="images/project.png">
+                <span id="Projects">Projekty</span>
+                <img class="HeadingRightIcon HoverIcon" src="images/project.png">
+            </p>
+            <p class="Headings" onclick="Contact()">
+                <img class="HeadingLeftIcon HoverIcon" src="images/notebook-of-contacts.png">
+                <span id="Contact">Kontakt</span>
+                <img class="HeadingRightIcon HoverIcon" src="images/notebook-of-contacts.png">
+            </p>
+            <div id="Border"></div>
+            <div id="HomePage" style="display:block;">
+                <div class="TextHome">
+                    <p id="FirstClip">
+                        <span id="FirstClipText">
+                            Witaj na mojej stronie, znajdziesz tutaj informacje o mnie, 
+                            moje projekty oraz kontakt do mnie 😀
+                        </span>
+                    </p>
+                    <p id="SecondClip">
+                        <span id="SecondClipText">
+                            Na górze ekranu możesz zmienić motyw strony zgodnie z własnymi
+                            preferencjami na ciemny lub jasny, jest tam również opcja zmiany języka 
+                            z polskiego na angielski i na odwrót 🏴󠁧󠁢󠁥󠁮󠁧󠁿 
+                        </span>
+                    </p>
+                    <p id="ThirdClip">
+                        <span id="ThirdClipText">
+                            Na tej stronie znajdziesz 4 zakładki, obecnie znajdujesz się
+                            na jednej z nich, czyli na "Głównej Stronie", są tutaj ogólne informacje
+                            i wstęp do strony 🙃
+                        </span>
+                    </p>
+                    <p id="FourthClip">
+                        <span id="FourthClipText">
+                            W zakładce "O mnie" znajdziesz informacje odnośnie mojej
+                            osoby, takie jak biografia w odnośniku, krótkie przedstawienie i umiejętności, 
+                            które nabyłem lub niedawnk poznałem, w końcu dopiero się uczę 😏
+                        </span>
+                    </p>
+                    <p id="FifthClip">
+                        <span id="FifthClipText">
+                            Trzecia zakładka to "Projekty", znajdują się tam wykonane przeze mnie
+                            podstawowe strony czy pracę, dzięki którym szkoliłem się i rozwijałem, z czasem postaram
+                            się zwiększyć poziom zaawansowania nowych stron, aczkolwiek pierwsze podejścia mogą być dość proste 😴
+                        </span>
+                    </p>
+                    <p id="SixthClip">
+                        <span id="SixthClipText">
+                            Ostatnia zakładka, która ci się przyda, jeśli zainteresuje moja praca Cię
+                            to "Kontakt", raczej nie trzeba tłumaczyć - znajdziesz tam dostępne portale społecznościowe, 
+                            sposoby kontaktu ze mną przez np. telefon czy email
+                        </span>
+                    </p>
+                </div>    
+            </div>
+            <div id="AboutMePage" style="display: none;">
+                <img src="/images/myprofile.png" alt="Ilustration of me" id="Profile"/>
+                <div class="TextAboutMe">
+                    <span id="TextAboutMe">Mam na imię Maciej i zaczynam swoje przygody ze stronami internetowymi.
+                    Ukończyłem szkołę średnią w zawodzie Technik Programista. To, z czym się mierzyłem, zobaczysz poniżej. 
+                    Od dziecka lubiłem spędzać czas przy komputerze, na początku ograniczałem to głównie do grania, 
+                    jednak w miarę z biegem czasu zacząłem również interesować się programowaniem, skryptami, zabawą grafiką czy montażem filmów.
+                    Nie będę się rozpisywał tutaj, jeśli Cię zainteresuję to wejdź w link poniżej i przeczytaj dokładniejszą historię 😉</span>
+                </div>    
+                <div id="BiographyText"><a id="BiographyLink" onclick="ShowBiography()">Jeśli chcesz poczytać więcej kliknij tutaj</a></div>
+                <h1 id="Skills">UMIEJĘTNOŚCI</h1>
+                <table id="TableIcons">
+                    <tr>
+                        <td><img style="width: 62%;height: 62%;" src="/images/js.png" alt="JS Icon" id="JSIcon"/></td>
+                        <td><img style="width: 95%;height: 95%;" src="/images/css-3.png" alt="CSS Icon" id="CSSIcon"/></td>
+                        <td><img src="/images/html.png" alt="HTML Icon" id="HTMLIcon"/></td>
+                        <td><img src="/images/mysql.png" alt="Mysql Icon" id="MysqlIcon"/></td>
+                        <td><img style="width: 95%;height: 95%;" src="/images/c-sharp.png" alt="C-Sharp Icon" id="C-SharpIcon"/></td>
+                        <td><img src="/images/php.png" alt="PHP Icon" id="PHPIcon"/></td>
+                        <td><img src="/images/xaml.png" alt="Xaml Icon" id="XamlIcon"/></td>        
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>CSS</td>
+                        <td>HTML</td>
+                        <td>Mysql</td>
+                        <td>C#</td>
+                        <td>PHP</td>
+                        <td>Xaml</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="BiographyPage" style="display:none;">
+                <h1 class="Heading">Biografia</h1>
+                <div id="BiographyContainer">
+                    <span id="BiographyContent">Urodziłem się w 2003 roku, mieszkam w malutkiej wsi, która ma jeden kościół i obecnie tylko jeden sklep. Chodziłem do szkoły w miasteczku parę kilometrów dalej, przez co zawsze dojeżdżałem autobusem, a w dodatku, będąc w pierwszych klasach, musiałem czekać na starszą siostrę, abym nie wracał sam przez wieś i sporą część czasu spędzałem w szkole. Komputer, który miałem w domu był komunijnym prezentem dla siostry, aczkolwiek ona go nie używała. Grałem w wiele gier internetowych, aż pobrałem słynnego Minecrafta i tam spędziłem wiele długich lat, później przerzucając się jeszcze na strzelanki.  Na początku edukacji nie byłem zbyt chętny do nauki, a oceny były raczej średnie. Z czasem jednak, gdy robiło się trudniej, o dziwo zaczęły pojawiać się lepsze oceny, a w ostatniej klasie podstawówki zdobyłem nawet świadectwo z wyróżnieniem, za które rodzice zainwestowali w komputer dla mnie i mogłem przerzucić się na nowsze gry typu CS:GO. W gimnazjum zdobyłem więcej znajomych, ale i musiałem już się trochę przyłożyć. Mało razy wychodziłem na spotkania ze znajomymi, przez co jedynym zajęciem był komputer: muzyka, gry, oglądanie filmów, a także granie z ludźmi z internetu. Dużo pomagałem rodzicom, wykonywałem wiele prac w domu, miałem swoje obowiązki i zajmowałem się naszymi zwierzętami. Razem ze skończeniem gimnazjum i pozytywnymi wynikami z egzaminu gimnazjalnego, zostałem bierzmowany wraz z resztą klasy. Odłączyłem się od reszty, idąc do technikum w innym mieście z jedynie jedną znajomą mi osobą. Zacząłem tam kształcić się w kierunku programistyki i uczyłem się wielu rzeczy od stron internetowych aż po aplikacje okienkowe czy mobilne. Zdałem prawo jazdy za drugim razem, a rok później zakupiłem własny samochód.  Zdałem egzaminy zawodowe INF.03 i INF.04, zacząłem również samemu douczać się w domu, przy komputerze, aby przygotować się do możliwej przyszłej pracy. W ostatnim roku przed maturą stwierdziłem, że biorę się za strony internetowe i w taki sposób powstało to, co właśnie widzisz...</span>
+                </div>
+                <h1 class="Heading" style="padding-bottom: 1%;">Zainteresowania</h1>
+                <table id="Table2Icons">
+                    <tr>
+                        <td class="tdImg"><img id="Img1" style="width: 40%;height: 40%;" src="/images/watching-tv.png" alt="Watching TV Icon" id="TVIcon"/></td>
+                        <td class="tdImg"><img id="Img2" style="width: 40%;height: 40%;" src="/images/computer-game.png" alt="Games Icon" id="GamesIcon"/></td>
+                        <td class="tdImg"><img id="Img3" style="width: 40%;height: 40%;" src="/images/walk.png" alt="Walking Icon" id="WalkIcon"/></td>
+                        <td class="tdImg"><img id="Img4" src="/images/pet.png" alt="Pets Icon" id="PetIcon"/></td>
+                        <td class="tdImg"><img id="Img5" src="/images/musical-note.png" alt="Music Icon" id="MusicIcon"/></td>      
+                    </tr>
+                    <tr>
+                        <td class="tdText" id="Text1">Interesują mnie filmy czy seriale o różnej tematyce</td>
+                        <td class="tdText" id="Text2">Uwielbiam grać w gry, szczególnie gatunku akcji oraz survival</td>
+                        <td class="tdText" id="Text3">Lubię również spacerować, niezależnie od pogody czy temperatury</td>
+                        <td class="tdText" id="Text4">Od dziecka mam kontakt ze zwierzętami domowymi, z którymi często się bawię</td>
+                        <td class="tdText" id="Text5">W wolnym czasie lubię słuchać muzyki, zazwyczaj wszystkiego, co wpadnie mi w ucho</td>
+                    </tr>
+                </table>
+                <p id="BiographyUnLink" onclick="HideBiography()">Wróć do poprzedniej strony</p>
+            </div>
+            <div id="ProjectsPage" style="display: none;">
+                <div class="Embed" onclick="location.href='ToDoList.html';">
+                    <div class="EmbedTitle"><span id="EmbedTitle1">Strona z tworzeniem zadań</span></div>
+                        <img src="images/ToDoListImage.png">
+                    <div class="EmbedText"><span id="EmbedText1">Na tej stronie zbudowanej od zera znajdziesz zwykłą listę zadań do zrobienia, która oczywiście zapisuje dane dla użytkownika, po powróceniu znajdziesz tam te same zadania. </span></div>
+                </div>
+                <p id="Incoming">Tu wkrótce powstaną nowe projekty 😅</p>
+            </div>
+            <div id="ContactPage" style="display: none;">
+                <div class="Container ContainerLTheme">
+                    <img src="/images/facebook.png" alt="Facebook Icon" id="FBIcon">
+                    <div class="ContainerText" id="FacebookText">
+                        Możesz wysłać mi zaproszenie do znajomych na Facebooku, najlepiej jeśli
+                        napiszesz wiadomość, abym wiedział  czy to nie przypadkowa osoba,
+                        na pewno szybko odpowiem.
+                    </div>
+                    <div style="font-size: 90%;" class="HiddenContact" id="FBContact" onclick="ToggleFacebook()" style="padding-top: 2%;">Kliknij aby przenieść się do mojego profilu</div>
+                </div>
+                <div class="Container ContainerLTheme">
+                    <img src="/images/gmail.png" alt="Gmail Icon" id="GmailIcon">
+                    <div class="ContainerText" id="GmailText">
+                        Możesz też wysłać mi wiadomość na pocztę Gmail,
+                        zaglądam tam raczej rzadko, ale jestem pewien,
+                        że prędzej czy później odczytam twoją wiadomość.
+                    </div>
+                    <div class="HiddenContact" id="GmailContact" onclick="ToggleGmail()">Kliknij aby zobaczyć</div>
+                </div>
+                <div class="Container ContainerLTheme">
+                    <img src="/images/viber.png" alt="Phone Icon" id="PhoneIcon">
+                    <div class="ContainerText" id="PhoneText" style="padding-top: 1.5%; font-size: 1.3vw;">
+                        Możesz również wysłać mi SMSa pod ten numer, zadzwonienie do mnie
+                        nie zawsze za skutkuje - w końcu mnóstwo połączeń to  reklamy, 
+                        z którymi nikt nie chce mieć do czynienia lub zwyczajnie nie mam 
+                        możliwości odebrać. Wiadomość SMS z pewnością szybko odczytam i na nią odpowiem.
+                    </div>
+                    <div class="HiddenContact" id="PhoneContact" onclick="TogglePhone()">Kliknij aby zobaczyć</div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer"> 
+            Cała ta strona jak i projekty są tworzone od podstaw, bez żadnych programów do projektowania czy skopiowanych gotowych szablonów. 
+                Strona będzie pewnie ulepszana jest ona stworzona w szybkim czasie i jeszcze nie jest skończona, a jedynie możliwa już do użytku. 
+        </footer>
+        <script src="PortfolioMain.js"></script>
+    </body>
+</html>

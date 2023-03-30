@@ -1,0 +1,674 @@
+/* ! Style dla ogólnych rzeczy 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Border {
+    border: 4px solid darkblue;
+    justify-content: center;
+    position: relative;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 7px;
+}
+
+.BodyLTheme {
+    background: linear-gradient(90deg, #FFF5E5, #FFFEDF, #E9FFD7, #FFE9E2, #EBFDFF, #FFF5E5);
+    background-size: 400%;
+}
+
+.BodyDTheme {
+    background: linear-gradient(90deg, #654815, #666414, #25470A, #4B1707, #064850, #654815);
+    background-size: 400%;
+    animation: ColorChange 50s linear infinite;
+}
+
+.Headings {
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: 3% 10%;
+    font-size: 3.5vw;
+    padding: 10px;
+    border: 2px solid rgba(66, 68, 90, 50);
+    text-align: center;
+    position: relative;
+    user-select: none;
+}
+
+.HeadingLeftIcon {
+    width: 5%;
+    left: 4%;
+    top: 18%;
+    position: absolute;
+}
+
+.HeadingRightIcon {
+    width: 5%;
+    right: 4%;
+    top: 18%;
+    position: absolute;
+}
+
+.Headings:hover {
+    background-color: rgba(66, 68, 90, 50);
+    color: white;
+    cursor: pointer;
+}
+
+.Headings:hover .HeadingLeftIcon,.Headings:hover .HeadingRightIcon {
+    filter: invert(1);
+}
+
+body {
+    min-width: 500px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    animation: ColorChange 50s linear infinite;
+    animation: PageShow 3s linear;
+}
+
+#ActualBody {
+    position: relative;
+    margin: 11% 10% 10% 10%;
+    padding-bottom: 1.5%;
+    padding-top: 0.5%;
+    overflow: hidden;
+}
+
+#Sun {
+    position: absolute;
+    top: -450px;
+    right: -400px;
+    opacity: 0.7;
+    animation: SunRotate 70s linear infinite;
+    z-index: 0;
+    user-select: none;
+}
+
+@keyframes SunRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.Cloud {
+    width: 100%;
+    position: absolute;
+    opacity: 0.6;
+    top: var(--t);
+    right: var(--r);
+    left: var(--l);
+    transform: scale(0.7);
+    z-index: 0;
+    user-select: none;
+}
+
+#Moon {
+    user-select: none;
+    position: absolute;
+    top: -300px;
+    right: -500px;
+    opacity: 0.5;
+    z-index: 0;
+    transform: scaleX(-1) scale(0.6);
+    visibility: hidden;
+}
+
+.ActualBodyLTheme {
+    background-color: #F0FAE3;
+    -webkit-box-shadow: 1px 6px 27px -2px rgba(23, 38, 200);
+    -moz-box-shadow: 1px 6px 27px -2px rgba(23, 38, 200);
+    box-shadow: 1px 6px 27px -2px rgb(23, 38, 200);
+}
+
+.ActualBodyDTheme {
+    background-color: #100572;
+    -webkit-box-shadow: 1px 6px 27px -2px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 1px 6px 27px -2px rgba(66, 68, 90, 1);
+    box-shadow: 1px 6px 27px -2px rgba(66, 68, 90, 1);
+}
+
+@keyframes ColorChange {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+#ProjectsPage #HomePage #ContactPage #AboutMePage {
+    position: -ms-page;
+}
+
+/* ! Style dla paska ustawień
+*/
+
+#Settings {
+    min-height: 50px;
+    max-height: 12vh;
+    display: flex;
+    align-items: stretch;
+    z-index: 8;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid grey;
+    box-shadow:inset 0px -42px 14px grey;
+    background-color: rgb(132,110,110);
+}
+
+#SettingsIcon { 
+    height: 100%;
+    width: 5vw;
+    min-width: 50px;
+    user-select: none;
+}
+
+.Buttons {
+    min-height: 50px;
+    user-select: none;
+    text-align: center;
+    display: none;
+    height: 12vh;
+    width: 17vw;
+    min-width: 97px;
+    padding: 3vh;
+    transform: skewX(-25deg);
+    border-left:rgba(66, 68, 90, 70) solid 3px;
+}
+
+.Buttons-Content {
+    font-weight: bold;
+    font-size: 170%;
+    transform: skewX(60deg);
+}
+
+.Buttons:hover {
+    cursor: pointer;
+    background: linear-gradient(rgb(132,110,200),grey );
+}
+
+.GearDiv {
+    display: inline;
+    padding: 1vh;
+}
+
+.GearDiv:hover {
+    cursor: pointer;
+    filter: invert(70%);
+}
+
+/* ! Style dla głównej strony
+*/
+
+#FirstClip {
+    z-index: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 200px;
+    font-size: 140%;
+    padding: 5%;
+    background: linear-gradient(#9894FF, #5100ff );
+    clip-path: polygon(100% 0, 100% 50%, 0 90%, 0 0);
+}
+
+#FirstClip Span {
+    z-index: 3;
+    position: absolute;
+    display: block;
+    padding-top: 2%;
+    transform: rotate(-5deg);
+}
+
+#SecondClip {
+    z-index: 1;
+    word-wrap: break-word;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 250px;
+    font-size: 150%;
+    padding: 5%;
+    background: linear-gradient(#002aff, #98F9FF);
+    clip-path: polygon(100% 20%, 100% 100%, 0 70%, 0 0);
+}
+
+#SecondClip Span {
+    z-index: 3;
+    position: absolute;
+    display: block;
+    padding-top: 3%;
+    transform: rotate(5deg);
+}
+
+#ThirdClip {
+    z-index: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 250px;
+    font-size: 150%;
+    padding: 5%;
+    background: linear-gradient(#9890FF 30%, #00f2ff );
+    clip-path: polygon(100% 0, 100% 50%, 0 100%, 0 0);
+}
+
+#ThirdClip Span {
+    z-index: 3;
+    position: absolute;
+    display: block;
+    padding-top: 1.5%;
+    transform: rotate(-6deg);
+}
+
+#FourthClip {
+    z-index: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 280px;
+    font-size: 130%;
+    padding: 3%;
+    background: linear-gradient(#ABFFA0, #d9ff00);
+    clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 30%);
+}
+
+#FourthClip Span {
+    z-index: 3;
+    position: absolute;
+    display: block;
+    padding-top: 13%;
+    transform: rotate(-4deg);
+}
+
+#FifthClip {
+    z-index: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 400px;
+    font-size: 130%;
+    padding: 8%;
+    background: linear-gradient(#CFDDA0 30%, #ffae00);
+    clip-path: polygon(100% 26%, 100% 100%, 0 100%, 0 10%);
+}
+
+#FifthClip Span {
+    z-index: 3;
+    position: absolute;
+    display: block;
+    padding-top: 15%;
+    transform: rotate(4deg);
+}
+
+#SixthClip {
+    z-index: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 440px;
+    font-size: 150%;
+    padding: 8%;
+    background:linear-gradient(#DB90FF, #ae00ff);
+    clip-path: polygon(100% 0, 100% 50%, 0 100%, 0 0);
+}
+
+#SixthClip Span {
+    z-index: 3;
+    position: absolute;
+    display: block;
+    padding-top: 4%;
+    transform: rotate(-8deg);
+}
+
+/* ! Style dla strony o mnie
+*/
+
+.TextAboutMe {
+    text-align: center;
+    left: 28%;
+    right: 2%;
+    padding-top: 7%;
+    margin-bottom: 10%;
+    display: inline;
+    position: absolute;
+}
+
+.TextAboutMe span {
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1.2px;
+    font-size: 1.6vw;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+#Skills {
+    padding: 5% 50% 5% 32%;
+    position: relative;
+    margin: 0 auto;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4vw;
+    color:rgb(16, 211, 23);
+    letter-spacing: 2px;
+}
+
+.Heading {
+    padding: 8%;
+    position: relative;
+    margin: 0 auto;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4vw;
+    color:rgb(16, 211, 52)
+}
+
+#BiographyContainer {
+    font-weight: bold;
+    padding: 0.5% 12% 5%;
+    letter-spacing: 1.2px;
+    font-size: 1.8vw;
+    text-align: center;
+    z-index: 5;
+    color: black;
+}
+
+#BiographyContent {
+    position: relative;
+}
+
+#BiographyText {
+    padding: 5%;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1.2px;
+    font-size: 1.6vw;
+}
+
+#BiographyLink {
+    color: lightskyblue;
+    text-decoration: underline;
+    position: relative;
+}
+
+#BiographyLink:hover {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#BiographyUnLink {
+    color: lightskyblue;
+    font-size: 2vw;
+    text-decoration: underline;
+    text-align: right;
+    padding: 2%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+#BiographyUnLink:hover {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#TableIcons {
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 5%;
+    position: relative;
+}
+
+#TableIcons td img {
+    filter: grayscale(100%);
+    width: 85%;
+    height: 85%;
+}
+
+#TableIcons td img:hover {
+    transform: scale(1.3);
+    cursor: grab;
+    filter: grayscale(0%);
+}
+
+#TableIcons td {
+    padding: 1.4vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+    color:rgb(16, 211, 23);
+    user-select: none;
+}
+
+#Profile {
+    margin-left: 7%;
+    margin-top: 7%;
+    width: 17.5%;
+    height: 17.5%;
+    border-radius: 50%;
+    border: 2px grey solid;
+    box-shadow: inset 2px 3px 10px 5px rgba(66, 68, 90, 1);
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    user-select: none;
+}
+
+#Table2Icons {
+    border-collapse: collapse;
+    margin: 10% auto;
+    padding: 5%;
+    position: relative;
+}
+
+#Table2Icons td img {
+    filter: grayscale(100%);
+    width: 30%;
+    height: 30%;
+}
+
+#Table2Icons td img:hover {
+    transform: scale(1.3);
+    cursor: grab;
+    filter: grayscale(0%);
+}
+
+.tdImg {
+    padding: 1.4vw;
+    text-align: center;
+}
+
+.tdText {
+    visibility: hidden;
+    font-weight: bold;
+    font-size: 1.6vw;
+    color:rgb(16, 211, 23);
+    text-align: center;
+}
+
+
+/* ! Style dla strony z projektami
+*/
+
+#Incoming {
+    margin-top: 10%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 140%;
+    position: relative;
+}
+
+.Embed {
+    position: relative;
+    overflow: hidden;
+    max-width: 35%;
+    height: 50vh;
+    margin: 5%;
+    border: gray solid 2px;
+    box-shadow: 0 0 10px 5px grey;
+}
+
+.Embed:hover {
+    cursor: pointer;
+}
+
+.Embed img {
+    position: absolute;
+    width: 100%;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+.EmbedText {
+    bottom: 0vh;
+    width: 100%;
+    background: linear-gradient(#717272, #ffffff);
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+}
+
+.Embed:hover .EmbedText {
+    opacity: 0.4;
+}
+
+.EmbedText span {
+    font-size: 140%;
+}
+
+.EmbedTitle {
+    top: 0px;
+    width: 100%;
+    background: linear-gradient(#717272, #ffffff);
+    opacity: 1;
+    z-index: 2;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.EmbedTitle span {
+    font-size: 180%;
+}
+
+/* ! Style dla strony z kontaktem
+*/
+
+.Container {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    padding: 1%;
+    margin: 10%;
+}
+
+.ContainerLTheme {
+    border: 4px #939393 solid;
+    background: radial-gradient(#fcfcfc 50%,#939393);
+}
+
+.ContainerDTheme {
+    border: 4px #7968a5 solid;
+    background: radial-gradient(#6344ff 50%,#7968a5);
+}
+
+.Container img {
+    width: 12vw;
+    height: 90%;
+    padding: 2%;
+}
+
+.ContainerText {
+    width: 50%;
+    font-size: 1.49vw; 
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.HiddenContact {
+    height: 60%;
+    max-height: 80px;
+    width: 23%;
+    margin: auto;
+    padding: 3%;
+    background-color: #EBFDFF;
+    box-shadow: inset 2px 3px 10px 5px rgba(66, 68, 90, 1);
+    border-radius: 30%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.HiddenContact:hover {
+    background-color: rgba(66, 68, 90, 1);
+    cursor: pointer;
+    border-radius: 30%;
+    color: #EBFDFF;
+}
+
+/* ! Style dla footera 
+*/
+
+footer {
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(#002aff, #00f2ff);
+    font-weight: bold;
+    font-size: 1.4vw;
+    color: #100572;
+    padding-top: 1%;
+}
+
+/* ! Style dla telefonów
+*/
+
+@media only screen and (max-width: 414px) {
+    #Settings {
+        max-height: 70px;
+    }
+    .Buttons {
+        max-height: 70px;
+        min-width: 80px;
+        padding: 6% 2% 2% 2%;
+    }
+    .Buttons-Content {
+        font-size: 0px;
+    }
+    #ActualBody {
+        margin: 20% 3% 3% 3%;
+        max-width: 75%;
+    }
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    footer {
+        height: 7vh;
+        padding-top: 5%;
+        font-size: 2vw;
+    }
+    #BiographyText {
+        margin-top: 50%;
+    }
+    .Embed {
+        max-width: 40%;
+        height: 25vh;
+    }
+    .EmbedText span {
+        font-size: 50%;
+    }
+    .EmbedTitle span{
+        font-size: 80%;
+    }
+}
