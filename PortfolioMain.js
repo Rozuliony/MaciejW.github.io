@@ -18,7 +18,7 @@ function AboutMe() {
     document.getElementById('ContactPage').style.display = "none";
     document.getElementById('BiographyPage').style.display = "none";
     if(window.innerWidth < 420) {
-        document.getElementById('footer').style.bottom = "-200px";
+        document.getElementById('footer').style.bottom = "-140px";
     }
 }
 
@@ -40,7 +40,7 @@ function Contact() {
     document.getElementById('ContactPage').style.display = "block";
     document.getElementById('BiographyPage').style.display = "none";
     if(window.innerWidth < 420) {
-        document.getElementById('footer').style.bottom = "-200px";
+        document.getElementById('footer').style.bottom = "-170px";
     }
 }
 
@@ -48,7 +48,7 @@ function ShowBiography() {
     document.getElementById('AboutMePage').style.display = "none";
     document.getElementById('BiographyPage').style.display = "block";
     if(window.innerWidth < 420) {
-        document.getElementById('footer').style.bottom = "-200px";
+        document.getElementById('footer').style.bottom = "-350px";
     }
 }
 
@@ -56,7 +56,7 @@ function HideBiography() {
     document.getElementById('BiographyPage').style.display = "none";
     document.getElementById('AboutMePage').style.display = "block";
     if(window.innerWidth < 420) {
-        document.getElementById('footer').style.bottom = "-200px";
+        document.getElementById('footer').style.bottom = "-140px";
     }
 }
 
