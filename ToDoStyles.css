@@ -244,6 +244,8 @@ footer a:hover {
     }
     footer {
         bottom: 0px;
+        padding: 2%;
+        font-size: 80%;
     }
     #FormContainer {
         display: block;
@@ -252,6 +254,7 @@ footer a:hover {
     #ListContainer {
         display: block;
         width: 100%;
+        overflow-y: scroll;
     }
     #AddTask {
         width: 60%;
@@ -284,4 +287,5 @@ footer a:hover {
     #ContentAlert {
         margin: 5% auto;
     }
+    
 }
