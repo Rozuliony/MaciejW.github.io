@@ -676,18 +676,18 @@ footer {
     }
 
     #SecondClip {
-        font-size: 120%;
-        padding: 8%;
+        font-size: 100%;
+        padding: 6%;
     }
     
     #SecondClip Span {
-        padding: 6%;
+        padding: 4%;
         transform: rotate(10deg);
     }
 
     #ThirdClip {
-        font-size: 130%;
-        padding: 8%;
+        font-size: 120%;
+        padding: 6%;
     }
     
     #ThirdClip Span {
@@ -701,7 +701,7 @@ footer {
     }
     
     #FourthClip Span {
-        padding-top: 15%;
+        padding-top: 20%;
         transform: rotate(-10deg);
     }
 
@@ -711,7 +711,7 @@ footer {
     }
     
     #FifthClip Span {
-        padding-top: 35%;
+        padding-top: 45%;
         transform: rotate(6deg);
     }
 
