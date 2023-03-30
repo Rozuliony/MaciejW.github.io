@@ -206,9 +206,9 @@ function PolLang() {
     document.getElementById('FirstClipText').innerHTML = "Witaj na mojej stronie, znajdziesz tutaj informacje o mnie, moje projekty oraz kontakt do mnie 😀";
     document.getElementById('SecondClipText').innerHTML = "Na górze ekranu możesz zmienić motyw strony zgodnie z własnymi preferencjami na ciemny lub jasny, jest tam również opcja zmiany języka z polskiego na angielski i na odwrót 🏴󠁧󠁢󠁥󠁮󠁧󠁿";
     document.getElementById('ThirdClipText').innerHTML = "Na tej stronie znajdziesz 4 zakładki, obecnie znajdujesz się na jednej z nich, czyli na 'Głównej Stronie', są tutaj ogólne informacje i wstęp do strony 🙃";
-    document.getElementById('FourthClipText').innerHTML = 'W zakładce "O mnie" znajdziesz informacje odnośnie mojej osoby, takie jak biografia w odnośniku, krótkie przedstawienie i umiejętności, które nabyłem lub niedawnk poznałem, w końcu dopiero się uczę 😏';
+    document.getElementById('FourthClipText').innerHTML = 'W zakładce "O mnie" znajdziesz informacje odnośnie mojej osoby, takie jak biografia w odnośniku, krótkie przedstawienie i umiejętności, które nabyłem lub niedawno poznałem, w końcu dopiero się uczę 😏';
     document.getElementById('FifthClipText').innerHTML = 'Trzecia zakładka to "Projekty", znajdują się tam wykonane przeze mnie podstawowe strony czy pracę, dzięki którym szkoliłem się i rozwijałem, z czasem postaram się zwiększyć poziom zaawansowania nowych stron, aczkolwiek pierwsze podejścia mogą być dość proste 😴';
-    document.getElementById('SixthClipText').innerHTML = 'Ostatnia zakładka, która ci się przyda, jeśli zainteresuje moja praca Cię to "Kontakt", raczej nie trzeba tłumaczyć - znajdziesz tam dostępne portale społecznościowe, sposoby kontaktu ze mną przez np. telefon czy email';
+    document.getElementById('SixthClipText').innerHTML = 'Ostatnia zakładka, która ci się przyda, jeśli zainteresuje Cię moja praca to "Kontakt", raczej nie trzeba tłumaczyć - znajdziesz tam dostępne portale społecznościowe, sposoby kontaktu ze mną przez np. telefon czy email';
     document.getElementById('Skills').style.padding = "5% 50% 5% 34%";   
     document.getElementById('Skills').innerHTML = "UMIEJĘTNOŚCI";
     document.getElementsByClassName('Heading')[0].innerHTML = "Biografia";
@@ -269,7 +269,7 @@ function reportWindowSize() {
             ButtonsContent.style.fontSize = "170%";
           });
       }
-    if(value < 1051) {
+     if(value < 1051 && value > 420) {
         document.getElementById('FBContact').style.fontSize = "70%";
         document.getElementById('GmailContact').style.fontSize = "80%";
         document.getElementById('PhoneContact').style.fontSize = "80%";
@@ -277,6 +277,9 @@ function reportWindowSize() {
             ContainersText.forEach(ContainersText => {
                 ContainersText.style.fontSize = '2vw';
           });}
+    } else if (value < 420) {
+        document.getElementById('GmailContact').style.fontSize = "60%";
+        document.getElementById('PhoneContact').style.fontSize = "60%";
     } else if (value > 1051) {
         document.getElementById('FBContact').style.fontSize = "100%";
         document.getElementById('GmailContact').style.fontSize = "100%";
