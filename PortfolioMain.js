@@ -239,6 +239,7 @@ window.addEventListener("resize", reportWindowSize);
 function reportWindowSize() {
     let value = window.innerWidth;
     let scrollvalue = window.scrollY;
+    alert(value);
     document.getElementById('footer').style.bottom = null;
     const ContainersText = document.querySelectorAll('.ContainerText');
     const ButtonsContent = document.querySelectorAll('.Buttons-Content');
