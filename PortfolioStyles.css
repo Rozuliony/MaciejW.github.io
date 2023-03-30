@@ -648,14 +648,14 @@ footer {
     }
 
     #ActualBody {
-        margin: 20% 3% 3% 12%;
-        max-width: 75%;
+        margin: 20% 3% 3% 7%;
+        max-width: 85%;
     }
 
     footer {
-        height: 9vh;
+        height: 10vh;
         padding-top: 2%;
-        font-size: 80%;
+        font-size: 70%;
         color: #dd3333;
     }
 
@@ -677,18 +677,18 @@ footer {
     }
 
     #SecondClip {
-        font-size: 120%;
-        padding: 8%;
+        font-size: 100%;
+        padding: 6%;
     }
     
     #SecondClip Span {
-        padding: 6%;
+        padding: 4%;
         transform: rotate(10deg);
     }
 
     #ThirdClip {
-        font-size: 130%;
-        padding: 8%;
+        font-size: 120%;
+        padding: 6%;
     }
     
     #ThirdClip Span {
@@ -702,7 +702,7 @@ footer {
     }
     
     #FourthClip Span {
-        padding-top: 15%;
+        padding-top: 20%;
         transform: rotate(-10deg);
     }
 
@@ -712,7 +712,7 @@ footer {
     }
     
     #FifthClip Span {
-        padding-top: 35%;
+        padding-top: 45%;
         transform: rotate(6deg);
     }
 
@@ -725,7 +725,7 @@ footer {
         padding: 8%;
         transform: rotate(-10deg);
     }
-
+    
     #Moon {
         top: -900px;
         right: -850px;
