@@ -648,7 +648,7 @@ footer {
     }
 
     #ActualBody {
-        margin: 20% 3% 3% 12%;
+        margin: 20% 3% 3% 7%;
         max-width: 85%;
     }
 
@@ -656,6 +656,7 @@ footer {
         height: 10vh;
         padding-top: 2%;
         font-size: 70%;
+        color: 
     }
 
     #BiographyText {
