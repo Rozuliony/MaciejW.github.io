@@ -649,10 +649,6 @@ footer {
         margin: 20% 3% 3% 3%;
         max-width: 75%;
     }
-    html, body {
-        max-width: 100%;
-        overflow-x: hidden;
-    }
     footer {
         height: 9vh;
         padding-top: 2%;

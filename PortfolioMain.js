@@ -29,7 +29,7 @@ function Projects() {
     document.getElementById('ContactPage').style.display = "none";
     document.getElementById('BiographyPage').style.display = "none";
     if(window.innerWidth < 420) {
-        document.getElementById('footer').style.bottom = "0px";
+        document.getElementById('footer').style.bottom = "-100px";
     }
 }
 
@@ -239,6 +239,7 @@ window.addEventListener("resize", reportWindowSize);
 function reportWindowSize() {
     let value = window.innerWidth;
     let scrollvalue = window.scrollY;
+    document.getElementById('footer').style.bottom = null;
     const ContainersText = document.querySelectorAll('.ContainerText');
     const ButtonsContent = document.querySelectorAll('.Buttons-Content');
     if(value > 650) {document.getElementById('BiographyText').style.marginTop = value * 0.03 + "px"}
