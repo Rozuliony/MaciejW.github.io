@@ -42,8 +42,15 @@ function AddTask() {
     } else {
         ListContainer.appendChild(Div);
         i++;
-        Div.innerHTML = '<div class="TaskTitle">' + Title.value + '</div><div class="TaskContent">' + Content.value + '</div>';
+        Div.innerHTML = '<div class="TaskTitle" id="t' + i + '">' + Title.value + '</div><div class="TaskContent">' + Content.value + '</div>';
         localStorage.setItem(localStorage.length, JSON.stringify(Div.innerHTML));
+        document.getElementById('ContentAlert').style.display = "none";
+        document.getElementById('TitleAlert').style.display = "none";
+        if(Title.value.length > 16 && Title.value.length < 35) {
+            document.getElementById("t" + i).style.fontSize = "100%";
+        } else if (Title.value.length > 35) {
+            document.getElementById("t" + i).style.fontSize = "70%";
+    }
         Title.value = "";
         Content.style.color = "grey";
         Content.value = "Zadanie do wykonania...";
@@ -89,6 +96,12 @@ function GetItems() {
         ListContainer.appendChild(Div);
         i++;
         Div.innerHTML = JSON.parse(localStorage.getItem(j));
+        document.getElementsByClassName('TaskTitle')[i - 1].id = "t" + i;
+        if(document.getElementById("t" + i).innerHTML.length > 16 && document.getElementById("t" + i).innerHTML.length < 35) {
+            document.getElementById("t" + i).style.fontSize = "100%";
+        } else if(document.getElementById("t" + i).innerHTML.length > 35) {
+            document.getElementById("t" + i).style.fontSize = "70%";
+        }
         Div.addEventListener('click', function() {
             if(Div.style.textDecoration === "line-through") {
                 Div.style.textDecoration = "none";
