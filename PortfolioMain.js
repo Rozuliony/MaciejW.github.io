@@ -40,7 +40,7 @@ function Contact() {
     document.getElementById('ContactPage').style.display = "block";
     document.getElementById('BiographyPage').style.display = "none";
     if(window.innerWidth < 420) {
-        document.getElementById('footer').style.bottom = "-170px";
+        document.getElementById('footer').style.bottom = "-230px";
     }
 }
 
@@ -295,7 +295,7 @@ function reportWindowSize() {
         document.getElementsByClassName('Buttons')[0].style.padding = "2vh";
         document.getElementsByClassName('Buttons')[1].style.padding = "2vh";
     } if (value < 420) {
-        document.getElementById('FBContact').style.fontSize = "60%";
+        document.getElementById('FBContact').style.fontSize = "50%";
     }
 
   }
