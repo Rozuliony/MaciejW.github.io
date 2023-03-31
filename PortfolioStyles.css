@@ -636,6 +636,10 @@ footer {
     #Settings {
         max-height: 70px;
     }
+    
+    #TextAboutMe {
+        font-size: 50%;
+    }
 
     .Buttons {
         max-height: 70px;
