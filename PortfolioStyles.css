@@ -741,4 +741,42 @@ footer {
         top: -300px;
         right: -330px;
     }
+    
+    .Container {
+        margin: 8%;
+        width: 85%;
+    }
+
+    .ContainerText {
+        width: 60%;
+        padding: 0%;
+    }
+
+    #FBIcon {
+        padding-top: 10%;
+    }
+
+    .HiddenContact {
+        width: 20%;
+    }
+
+    #FacebookText {
+        font-size: 70%;
+    }
+
+    #GmailText {
+        font-size: 70%;
+    }
+
+    #GmailIcon {
+        padding-top: 8%;
+    }
+
+    #PhoneText {
+        font-size: 65%;
+    }
+
+    #PhoneIcon {
+        padding-top: 15%;
+    }
 }
