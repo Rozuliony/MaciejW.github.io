@@ -240,7 +240,7 @@ footer a:hover {
 
 @media only screen and (max-width: 414px) {
     footer {
-        bottom: 0px;
+        bottom: -100px;
         padding: 2%;
         font-size: 80%;
     }
@@ -289,6 +289,14 @@ footer a:hover {
     
     .TaskContainer {
         user-select: none;
+    }
+    
+    #LabelTitle {
+    font-size: 4.2vw;
+    }
+    
+    #LabelContent {
+        font-size: 3.8vw;
     }
     
 }
