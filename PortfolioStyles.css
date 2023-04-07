@@ -679,6 +679,15 @@ footer {
     .EmbedTitle span{
         font-size: 80%;
     }
+    
+    #FirstClip {
+        font-size: 120%;
+    }
+    
+    #FirstClip Span {
+        padding: 8%;
+        transform: rotate(10deg);
+    }
 
     #SecondClip {
         font-size: 100%;
@@ -686,17 +695,17 @@ footer {
     }
     
     #SecondClip Span {
-        padding: 4%;
+        padding-top: 7%;
         transform: rotate(10deg);
     }
 
     #ThirdClip {
-        font-size: 120%;
+        font-size: 110%;
         padding: 6%;
     }
     
     #ThirdClip Span {
-        padding-top: 0%;
+        padding-top: 4%;
         transform: rotate(-12deg);
     }
 
@@ -706,7 +715,7 @@ footer {
     }
     
     #FourthClip Span {
-        padding-top: 20%;
+        padding-top: 15%;
         transform: rotate(-10deg);
     }
 
@@ -716,7 +725,7 @@ footer {
     }
     
     #FifthClip Span {
-        padding-top: 45%;
+        padding-top: 35%;
         transform: rotate(6deg);
     }
 
