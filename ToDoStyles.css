@@ -240,9 +240,10 @@ footer a:hover {
 
 @media only screen and (max-width: 414px) {
     footer {
-        bottom: -20px;
+        bottom: 0px;
         padding: 2%;
         font-size: 80%;
+        display: block;
     }
     #FormContainer {
         display: block;
@@ -254,7 +255,8 @@ footer a:hover {
         height: 50vh;
         overflow-y: scroll;
         overflow: scroll;
-        margin-bottom: 5%;
+        margin-bottom: 20%;
+        border: 3px solid red;
     }
     #AddTask {
         width: 60%;
