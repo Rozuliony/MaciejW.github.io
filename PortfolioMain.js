@@ -113,6 +113,8 @@ function TogglePhone() {
 }
 
 function DarkTheme() {
+    localStorage.removeItem("Theme", "Light");
+    localStorage.setItem("Theme", "Dark");
     const Clouds = document.querySelectorAll('.Cloud');
     const Stars = document.querySelectorAll('.Stars');
     document.getElementById('BiographyContent').style.color = "white";
@@ -134,6 +136,8 @@ function DarkTheme() {
 }
 
 function LightTheme() {
+    localStorage.removeItem("Theme", "Dark");
+    localStorage.setItem("Theme", "Light");
     const Clouds = document.querySelectorAll('.Cloud');
     const Stars = document.querySelectorAll('.Stars');
     document.getElementsByClassName('Headings')[0].style.color = "black";
@@ -155,6 +159,8 @@ function LightTheme() {
 }
 
 function EngLang() {
+    localStorage.removeItem("Jezyk", "Pol");
+    localStorage.setItem("Jezyk", "Eng");
     document.getElementById('Home').innerHTML = "Home";
     document.getElementById('AboutMe').innerHTML = "About Me";
     document.getElementById('Projects').innerHTML = "Projects";
@@ -195,6 +201,8 @@ function EngLang() {
 }
 
 function PolLang() {
+    localStorage.removeItem("Jezyk", "Eng");
+    localStorage.setItem("Jezyk", "Pol");
     document.getElementById('Home').innerHTML = "Główna";
     document.getElementById('AboutMe').innerHTML = "O mnie";
     document.getElementById('Projects').innerHTML = "Projekty";
@@ -237,6 +245,16 @@ function PolLang() {
 window.addEventListener("resize", reportWindowSize);
 
 function reportWindowSize() {
+    if(localStorage.getItem("Jezyk") === "Pol") {
+        PolLang();
+    } else if (localStorage.getItem("Jezyk") === "Eng") {
+        EngLang();
+    }
+    if(localStorage.getItem("Theme") === "Light") {
+        LightTheme();
+    } else if (localStorage.getItem("Theme") === "Dark") {
+        DarkTheme();
+    }
     let value = window.innerWidth;
     let scrollvalue = window.scrollY;
     const ContainersText = document.querySelectorAll('.ContainerText');
