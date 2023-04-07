@@ -664,7 +664,7 @@ footer {
     }
 
     #BiographyText {
-        margin-top: 50%;
+        margin-top: 47%;
     }
 
     .Embed {
@@ -788,4 +788,13 @@ footer {
     #PhoneIcon {
         padding-top: 15%;
     }
+    
+    .HeadingLeftIcon {
+    top: 25%;
+}
+
+.HeadingRightIcon {
+    top: 25%;
+}
+    
 }
