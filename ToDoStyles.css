@@ -21,7 +21,7 @@ body {
 
 #ListContainer {
     width: 50%;
-    padding: 5%;
+    padding: 3%;
     position: relative;
     float: right;
     overflow: scroll;
@@ -255,7 +255,7 @@ footer a:hover {
         height: 50vh;
         overflow-y: scroll;
         overflow: scroll;
-        padding-bottom: 100px;
+        padding-bottom: 30%;
     }
     #AddTask {
         width: 60%;
