@@ -240,7 +240,7 @@ footer a:hover {
 
 @media only screen and (max-width: 414px) {
     footer {
-        bottom: -100px;
+        bottom: -20px;
         padding: 2%;
         font-size: 80%;
     }
@@ -254,6 +254,7 @@ footer a:hover {
         height: 50vh;
         overflow-y: scroll;
         overflow: scroll;
+        margin-bottom: 5%;
     }
     #AddTask {
         width: 60%;
