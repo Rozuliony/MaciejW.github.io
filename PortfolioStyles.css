@@ -686,7 +686,7 @@ footer {
     
     #FirstClip Span {
         padding: 8%;
-        transform: rotate(10deg);
+        transform: rotate(-7deg);
     }
 
     #SecondClip {
@@ -695,7 +695,7 @@ footer {
     }
     
     #SecondClip Span {
-        padding-top: 7%;
+        padding-top: 14%;
         transform: rotate(10deg);
     }
 
