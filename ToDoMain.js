@@ -43,7 +43,7 @@ function AddTask() {
         ListContainer.appendChild(Div);
         i++;
         Div.innerHTML = '<div class="TaskTitle" id="t' + i + '">' + Title.value + '</div><div class="TaskContent">' + Content.value + '</div>';
-        localStorage.setItem(localStorage.length, JSON.stringify(Div.innerHTML));
+        localStorage.setItem(localStorage.length - 2, JSON.stringify(Div.innerHTML));
         document.getElementById('ContentAlert').style.display = "none";
         document.getElementById('TitleAlert').style.display = "none";
         if(Title.value.length > 16 && Title.value.length < 35) {
@@ -64,7 +64,7 @@ function AddTask() {
     });
     Div.addEventListener('dblclick', function() {
         ListContainer.removeChild(Div);
-        for(p = 0;p < localStorage.length;p++) {
+        for(p = 0;p < localStorage.length - 2;p++) {
             if(document.getElementById(p) === null) {
                 localStorage.removeItem(p);
             }
@@ -75,7 +75,7 @@ function AddTask() {
 function GetItems() {
     for(j = 0;;j++) {
         let ii = 0;
-        for(jj = 0; ii < localStorage.length;jj++) {
+        for(jj = 0; ii < localStorage.length - 2;jj++) {
             if(j != 0) {
                 break;
             } else if (localStorage.getItem(jj) === null) {
@@ -111,7 +111,7 @@ function GetItems() {
         });
         Div.addEventListener('dblclick', function() {
             ListContainer.removeChild(Div);
-            for(pp = 0;pp < localStorage.length;pp++) {
+            for(pp = 0;pp < localStorage.length - 2;pp++) {
                 if(document.getElementById(pp) === null) {
                     localStorage.removeItem(pp);
                 }
