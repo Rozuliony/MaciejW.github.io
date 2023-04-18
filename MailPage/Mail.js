@@ -1,7 +1,4 @@
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
-
-const fs = require('fs');
+import * as fs from '/MailPage/node_modules/fs';
 const login = window.document.getElementById('login');
 const password = window.document.getElementById('password');
 
