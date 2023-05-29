@@ -189,7 +189,7 @@ function RemoveItems() {
 }
 
 document.getElementById('Home').addEventListener('click', () => {
-  window.location = "index";
+  window.location = "../index";
 });
  
 document.getElementById('SendingContent').addEventListener('click', () => {
@@ -198,7 +198,7 @@ document.getElementById('SendingContent').addEventListener('click', () => {
     if(document.getElementById('SentSection').innerHTML !=  "") {
       RemoveItems();
     }
-    document.getElementById('ContentSection').style.backgroundImage = "url('images/QuizBackground.jpg')";
+    document.getElementById('ContentSection').style.backgroundImage = "url('../images/QuizBackground.jpg')";
     document.getElementById('SendingSection').style.display = "block";
     document.getElementById('SentSection').style.display = "none";
     document.getElementById('StatisticQuizSection').style.display = "none";
@@ -212,7 +212,7 @@ document.getElementById('SentContent').addEventListener('click', () => {
   if(document.getElementById('SentSection').style.display === "none") {
   DisplayReset();
   GetItems();
-  document.getElementById('ContentSection').style.backgroundImage = "url('images/QuizBackground.jpg')";
+  document.getElementById('ContentSection').style.backgroundImage = "url('../images/QuizBackground.jpg')";
   document.getElementById('SendingSection').style.display = "none";
   document.getElementById('SentSection').style.display = "block";
   document.getElementById('StatisticQuizSection').style.display = "none";
@@ -244,7 +244,7 @@ document.getElementById('LogicQuiz').addEventListener('click', () => {
   if(document.getElementById('SentSection').innerHTML !=  "") {
     RemoveItems();
   }
-  document.getElementById('ContentSection').style.backgroundImage = "url('images/EmailBackground.jpg')";
+  document.getElementById('ContentSection').style.backgroundImage = "url('../images/EmailBackground.jpg')";
   document.getElementById('SendingSection').style.display = "none";
   document.getElementById('SentSection').style.display = "none";
   document.getElementById('StatisticQuizSection').style.display = "none";
@@ -260,7 +260,7 @@ document.getElementById('NormalQuiz').addEventListener('click', () => {
   if(document.getElementById('SentSection').innerHTML !=  "") {
     RemoveItems();
   }
-  document.getElementById('ContentSection').style.backgroundImage = "url('images/EmailBackground.jpg')";
+  document.getElementById('ContentSection').style.backgroundImage = "url('../images/EmailBackground.jpg')";
   document.getElementById('SendingSection').style.display = "none";
   document.getElementById('SentSection').style.display = "none";
   document.getElementById('StatisticQuizSection').style.display = "none";
