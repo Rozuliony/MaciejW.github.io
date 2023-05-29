@@ -509,9 +509,10 @@ body {
 .Embed {
     position: relative;
     overflow: hidden;
+    display: inline-block;
     max-width: 35%;
     height: 50vh;
-    margin: 5%;
+    margin: 9%;
     border: gray solid 2px;
     box-shadow: 0 0 10px 5px grey;
 }
