@@ -141,6 +141,9 @@ function ChangeArea() {
   document.getElementById('SecondLogin').style.width = window.innerWidth + "px";
   document.getElementById('ActualPage').style.height = window.innerHeight + "px";
   document.getElementById('ActualPage').style.width = window.innerWidth + "px";
+  alert(document.getElementById('SecondLogin').style.width);
+  alert(document.getElementById('SecondLogin').style.height);
+  alert(document.getElementById('SecondLoginP').style.fontSize);
   if(window.innerWidth > 700) {
     document.getElementById('NormalQuizSection').style.height = window.innerHeight / 1.5 + "px";
     document.getElementById('NormalQuizSection').style.width = window.innerWidth / 2 + "px";
