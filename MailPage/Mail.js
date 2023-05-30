@@ -1,4 +1,4 @@
-ChangeArea();
+setTimeout(ChangeArea(),50);
 
 localStorage.setItem('LogicQuizCounter', 0);
 localStorage.setItem('NormalQuizCounter', 0);
@@ -273,7 +273,7 @@ document.getElementById('NormalQuiz').addEventListener('click', () => {
   }
 });
 
-window.addEventListener("resize", ChangeArea);
+window.addEventListener("resize", setTimeout(ChangeArea(),50));
 
 
 function AddMessage() {
