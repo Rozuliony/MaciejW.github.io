@@ -270,7 +270,7 @@ document.getElementById('NormalQuiz').addEventListener('click', () => {
   }
 });
 
-window.addEventListener("resize", setTimeout(ChangeArea(),50));
+window.addEventListener("resize", () => {setTimeout( ChangeArea, 50)});
 
 
 function AddMessage() {
