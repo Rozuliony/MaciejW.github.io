@@ -669,17 +669,17 @@ footer {
     }
 
     .Embed {
-        max-width: 40%;
+        max-width: 35%;
         height: 25vh;
-        margin: 5%;
+        margin: 3%;
     }
 
     .EmbedText {
-        max-height: 35%;
+        height: 40%;
     }
     
     .EmbedText span {
-        font-size: 30%;
+        font-size: 35%;
     }
 
     .EmbedTitle span{
