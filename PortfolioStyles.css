@@ -671,10 +671,15 @@ footer {
     .Embed {
         max-width: 40%;
         height: 25vh;
+        margin: 5%;
     }
 
+    .EmbedText {
+        max-height: 35%;
+    }
+    
     .EmbedText span {
-        font-size: 50%;
+        font-size: 30%;
     }
 
     .EmbedTitle span{
