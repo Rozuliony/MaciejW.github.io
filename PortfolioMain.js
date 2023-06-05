@@ -28,7 +28,7 @@ function Projects() {
     document.getElementById('ProjectsPage').style.display = "block";
     document.getElementById('ContactPage').style.display = "none";
     document.getElementById('BiographyPage').style.display = "none";
-    if(window.innerWidth < 420) {
+    if(window.innerWidth < 500) {
         document.getElementById('footer').style.bottom = "0px";
     }
 }
