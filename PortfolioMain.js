@@ -190,6 +190,8 @@ function EngLang() {
     document.getElementById('TextAboutMe').innerHTML = "My name is Maciej and I am starting my adventures with websites. I graduated from high school in the profession of Programming Technician. What I was up against, you will see below. Since I was a child I liked to spend time at the computer, at first I limited it mainly to gaming, but as time went by I also started to be interested in programming, scripting, playing with graphics or editing videos. I won't elaborate here, if I interest you then go to the link below and read a more detailed story 😉.";
     document.getElementById('EmbedTitle1').innerHTML = "To-Do List Page";
     document.getElementById('EmbedText1').innerHTML = "On this page built from scratch you will find the usual to-do list, which of course saves the data for the user, when you return you will find the same tasks there.";
+    document.getElementById('EmbedTitle2').innerHTML = "Quiz and mail site";
+    document.getElementById('EmbedText2').innerHTML = "Here you can send basic messages by mail and solve quizzes.";
     document.getElementById('Incoming').innerHTML = "New projects will be built here soon 😅";
     document.getElementById('Text1').innerHTML = "I'm interested in movies or TV series of various themes";
     document.getElementById('Text2').innerHTML = "I love to play games, especially the action and survival genre";
@@ -232,6 +234,8 @@ function PolLang() {
     document.getElementById('TextAboutMe').innerHTML = "Mam na imię Maciej i zaczynam swoje przygody ze stronami internetowymi. Ukończyłem szkołę średnią w zawodzie Technik Programista. To, z czym się mierzyłem, zobaczysz poniżej. Od dziecka lubiłem spędzać czas przy komputerze, na początku ograniczałem to głównie do grania, jednak w miarę z biegem czasu zacząłem również interesować się programowaniem, skryptami, zabawą grafiką czy montażem filmów. Nie będę się rozpisywał tutaj, jeśli Cię zainteresuję to wejdź w link poniżej i przeczytaj dokładniejszą historię 😉";
     document.getElementById('EmbedTitle1').innerHTML = "Strona z tworzeniem zadań";
     document.getElementById('EmbedText1').innerHTML = "Na tej stronie zbudowanej od zera znajdziesz zwykłą listę zadań do zrobienia, która oczywiście zpaisuje dane dla użytkownika, po powróceniu znajdziesz tam te same zadania.";
+    document.getElementById('EmbedTitle2').innerHTML = "Strona pocztowa z quizami";
+    document.getElementById('EmbedText2').innerHTML = "Możesz tutaj wysyłać podstawowe wiadomości pocztą oraz rozwiązywać quizy.";
     document.getElementById('Incoming').innerHTML = "Tu wkrótce powstaną nowe projekty 😅";
     document.getElementById('Text1').innerHTML = "Interesują mnie filmy czy seriale o różnej tematyce";
     document.getElementById('Text2').innerHTML = "Uwielbiam grać w gry, szczególnie gatunku akcji oraz survival";
