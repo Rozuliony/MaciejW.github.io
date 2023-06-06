@@ -295,7 +295,7 @@ function AddMessage() {
   GetItems();
   do{
     if(document.getElementById('EI' + nn) === null) {
-      Div.innerHTML = '<div class="SubjectInfo">' + subjectemail.value + '</div><div class="BodyInfo">' + bodyemail.value + '</div><div class="ReceiverInfo">' + receiveremail.value + '</div><img class="TrashIcon" id="EI' + nn + '"src="images/trash.png">';
+      Div.innerHTML = '<div class="SubjectInfo">' + subjectemail.value + '</div><div class="BodyInfo">' + bodyemail.value + '</div><div class="ReceiverInfo">' + receiveremail.value + '</div><img class="TrashIcon" id="EI' + nn + '"src="../images/trash.png">';
       check = true;
     } else {
       nn++;
