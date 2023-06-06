@@ -189,7 +189,7 @@ function RemoveItems() {
 }
 
 document.getElementById('Home').addEventListener('click', () => {
-  window.location = "../Portfolio/index.html";
+  window.location = "../index.html";
 });
  
 document.getElementById('SendingContent').addEventListener('click', () => {
