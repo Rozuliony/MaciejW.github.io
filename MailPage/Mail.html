@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/images/email.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Mail.css" rel="stylesheet" type="text/css"/>
+    <title>MailPage</title>
+ </head>
+    <body>
+        <div id="FirstLogin">
+            <p id="FirstText">Witaj! Widzę ze jesteś pierwszy raz na tej stronie, musisz przejść logowanie wstępne!</p>
+        </div>
+        <div id="FirstLogin2">
+            <p id="FirstLogin2P">Wpisz swój email w pole poniżej oraz hasło które ustalisz dla tej strony (nie hasło twojego maila), zaznacz poprawną odpowiedź na pytanie, a następnie zatwierdź przyciskiem!</p>
+            <div id="GetMail">
+                <label for="Mail">Wpisz tutaj swój mail:</label>
+                <input type="text" id="Mail">
+                <label for="Mail">Wpisz tutaj swoje hasło:</label>
+                <input type="text" id="password" maxlength="20">
+                <button onclick="CheckAnswer()">Zatwierdzam</button>
+            </div>
+            <div id="AnswerCheck">
+                <p id="CheckingQuestion">Działanie 2 + 2 * 2 równa się jakiej liczbie?</p>
+                <label class="RadioLabel" for="Option1">2</label>
+                <input type="radio" class="Radio" id="Option1" onclick="RadioChange(1)">
+                <label class="RadioLabel" for="Option2">4</label>
+                <input type="radio" class="Radio" id="Option2" onclick="RadioChange(2)">
+                <label class="RadioLabel" for="Option3">6</label>
+                <input type="radio" class="Radio" id="Option3" onclick="RadioChange(3)">
+                <label class="RadioLabel" for="Option4">8</label>
+                <input type="radio" class="Radio" id="Option4" onclick="RadioChange(4)">
+            </div>
+        </div>
+        <div id="SecondLogin">
+            <p id="SecondLoginP">Wpisz hasło ustalone wcześniej, jeśli nie pamiętasz, poszukaj na swojej poczcie!</p>
+            <div id="GetPassword">
+                <label for="passwordcheck">Wpisz ustalone wcześniej hasło:</label>
+                <input type="text" id="passwordcheck">
+                <button onclick="CheckPassword()">Zatwierdzam</button>
+            </div>
+            <div id="NewLogin" onclick="NewLogin()">Jeśli chcesz ponownie stworzyć hasło, kliknij tutaj!</div>
+        </div>
+        <div id="ActualPage">
+            <div id="LeftSection">
+                <div id="EmailNav">1. Email <button id="Sign1">+</button></div>
+                    <ul id="EmailMenu">
+                        <li id="SendingContent">Wyślij wiadomość</li>
+                        <li id="SentContent">Wysłane wiadomości</li>
+                    </ul>
+                <div id="QuizNav">2. Quizy <button id="Sign2">+</button></div>
+                    <ul id="QuizMenu">
+                        <li id="StatisticQuiz">Statystyka Quizów</li>
+                        <li id="LogicQuiz">Logiczne Quizy</li>
+                        <li id="NormalQuiz">Podstawowe Quizy</li>
+                    </ul>
+                <div id="HomeNav">2. Powrót <button id="Sign3">+</button></div>
+                    <ul id="HomeMenu">
+                        <li id="Home">Wróć do strony głównej</li>
+                    </ul>
+            </div>  
+            <div id="ContentSection">
+                <div id="SendingSection">
+                    <img class="Background" src="/images/EmailBackground.jpg">
+                    <label id="LabelEmail">Wpisz adres osoby do której chcesz napisać!</label>
+                    <input type="text" id="ReceiveEmail" required>
+                    <label id="LabelSubject">Wpisz tytuł wiadomości którą chcesz wysłać!</label>
+                    <input type="text" id="SubjectEmail" required>
+                    <label id="LabelBody">Wpisz zawartość wiadomości którą chcesz wysłać!</label>
+                    <textarea id="BodyEmail" required maxlength="2800"></textarea>
+                    <button onclick="SendingEmail()" id="SendingEmail">Wyślij</button>
+                </div>
+                <div id="SentSection" style="display: none;">
+                </div>
+                <div id="StatisticQuizSection" style="display: none;">
+                    <img class="Background" src="/images/QuizBackground.jpg">
+                    <div class="TextDone" id="QuizDone">Ilość wykonanych quizów razem:</div><p class="CounterDone" id="CounterQuizDone"></p>
+                    <div class="TextDone" id="QuizLogicDone">Ilość wykonanych logicznych quizów:</div><p class="CounterDone" id="CounterLogicQuizDone"></p>
+                    <div class="TextDone" id="QuizNormalDone">Ilość wykonanych normalnych quizów:</div><p class="CounterDone" id="CounterNormalQuizDone"></p>
+                </div>
+                <div id="LogicQuizSection" style="display: none;">
+                    <img class="Background" src="/images/QuizBackground.jpg">
+                    <div class="Embed" id="FirstLogicQuizEmbed" onclick="ShowLogicQuizOne()">
+                        <img src="/images/QuizLog1.jpeg">
+                    <div class="EmbedText"><span id="EmbedText1">Quiz z prostymi zagadkami</span></div>
+                </div>
+                </div>
+                <div id="NormalQuizSection" style="display: none;">
+                    <img class="Background" src="/images/QuizBackground.jpg">
+                    <div class="Embed" id="FirstQuizEmbed" onclick="ShowQuizOne()">
+                            <img src="/images/QuizOg1.jpg">
+                        <div class="EmbedText"><span id="EmbedText1">Quiz o wiedzy ogólnej</span></div>
+                    </div>
+                    <div class="Embed" id="SecondQuizEmbed" onclick="ShowQuizTwo()">
+                        <img src="/images/QuizOg2.jpg">
+                    <div class="EmbedText"><span id="EmbedText1">Quiz o wiedzy z matematyki</span></div>
+                </div>
+                </div>
+                <div class="QuizContainer" id="Quiz" style="display:none">
+                    <img class="Background" src="/images/QuizBackground.jpg">
+                    <div class="QuizHeader">
+                        <h2 id="Question">Question Text</h2>
+                        <ul>
+                            <li>
+                                <input type="radio" name="Answer" id="A" class="Answer">
+                                <label for="A" id="A_text">Answer</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Answer" id="B" class="Answer">
+                                <label for="B" id="B_text">Answer</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Answer" id="C" class="Answer">
+                                <label for="C" id="C_text">Answer</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="Answer" id="D" class="Answer">
+                                <label for="D" id="D_text">Answer</label>
+                            </li>
+                        </ul>
+                    </div>
+                <button class="QuizButtons" id="Submit">WYŚLIJ</button>
+                </div>
+                <div class="QuizContainer" id="QuizScore" style="display: none;">
+                    <h2 id="Score"></h2>
+                    <button id="Reload" class="QuizButtons" onclick="ReloadQuiz()">POWTÓRZ</button>
+                    <button id="Leave" class="QuizButtons" onclick="LeaveQuiz()">POWRÓĆ</button>
+                </div>
+            </div>
+        </div>
+        <div id="WybranyQuiz" style="display: none;"></div>
+        <div id="RodzajQuiz" style="display: none;"></div>
+        <script src="Mail.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </body>
+</html>
