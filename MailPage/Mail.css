@@ -272,6 +272,12 @@
     display:flex;
   }
 
+  #ContentBackground {
+    position: absolute;
+    z-index: -2;
+    background-color: brown;
+  }
+
   #SendingSection label {
     display: block;
     margin-bottom: 5%;
@@ -577,16 +583,52 @@
   top: 0;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 450px) {
+  #Question {
+    margin-top: 2%;
+    font-size: 130%;
+    margin-bottom: 2%;
+  }
+  #Submit {
+    top: 110%;
+    width: 50%;
+  }
+  #Reload {
+    top: 160%;
+    left: 22%;
+  }
+  #Leave {
+    top: 300%;
+    left: 22%;
+  }
+  .QuizContainer ul {
+    padding: 2%;
+    font-size: 100%;
+  }
   #LeftSection {
     width: 100%;
     height: 220px;
+  }
+  #SendingSection {
+    margin-top: -55%;
+  }
+  #SendingSection label {
+    font-size: 100%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+  }
+  #BodyEmail {
+    height: 75px;
+  }
+  .TextDone {
+    font-size: 100%;
   }
   #ContentSection {
     width: 100%;
   }
   .Embed {
-    max-width: 80%;
+    max-width: 90%;
+    height: 45vh;
   }
   #SecondLoginP {
     font-size: 140%;
@@ -628,6 +670,10 @@
     width: 60%;
   }
   #StatisticQuizSection {
-    margin-top: -40%;
+    margin-top: -80%;
+  }
+  #LogicQuizSection {
+    margin: 3% 5%;
+    width: 88%;
   }
 }
