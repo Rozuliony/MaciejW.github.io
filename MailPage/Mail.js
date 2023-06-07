@@ -140,12 +140,12 @@ function ChangeArea() {
   document.getElementById('ActualPage').style.height = window.innerHeight + "px";
   document.getElementById('ActualPage').style.width = window.innerWidth + "px";
   if(window.innerWidth > 500) {
-    document.getElementById('NormalQuizSection').style.height = window.innerHeight / 1.5 + "px";
-    document.getElementById('NormalQuizSection').style.width = window.innerWidth / 2 + "px";
-    document.getElementById('LogicQuizSection').style.height = window.innerHeight / 1.5 + "px";
-    document.getElementById('LogicQuizSection').style.width = window.innerWidth / 2 + "px";
-    document.getElementById('Quiz').style.height = window.innerHeight / 1.2 + "px";
-    document.getElementById('Quiz').style.width = window.innerWidth / 2 + "px";
+    document.getElementById('NormalQuizSection').style.height = window.innerHeight / 1.3 + "px";
+    document.getElementById('NormalQuizSection').style.width = window.innerWidth / 1.9 + "px";
+    document.getElementById('LogicQuizSection').style.height = window.innerHeight / 1.3 + "px";
+    document.getElementById('LogicQuizSection').style.width = window.innerWidth / 1.9 + "px";
+    document.getElementById('Quiz').style.height = window.innerHeight + "px";
+    document.getElementById('Quiz').style.width = window.innerWidth + "px";
   }
 }
 
