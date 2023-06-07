@@ -144,11 +144,8 @@ function ChangeArea() {
     document.getElementById('NormalQuizSection').style.width = window.innerWidth / 2 + "px";
     document.getElementById('LogicQuizSection').style.height = window.innerHeight / 1.5 + "px";
     document.getElementById('LogicQuizSection').style.width = window.innerWidth / 2 + "px";
-  } else {
-    document.getElementById('NormalQuizSection').style.height = window.innerHeight / 1.2 + "px";
-    document.getElementById('NormalQuizSection').style.width = window.innerWidth / 1.5 + "px";
-    document.getElementById('LogicQuizSection').style.height = window.innerHeight / 1.2 + "px";
-    document.getElementById('LogicQuizSection').style.width = window.innerWidth / 1.5 + "px";
+    document.getElementById('Quiz').style.height = window.innerHeight / 1.2 + "px";
+    document.getElementById('Quiz').style.width = window.innerWidth / 2 + "px";
   }
 }
 
@@ -204,6 +201,7 @@ document.getElementById('SendingContent').addEventListener('click', () => {
     document.getElementById('LogicQuizSection').style.display = "none";
     document.getElementById('NormalQuizSection').style.display = "none";
     document.getElementById('Quiz').style.display = "none";
+    document.getElementById('QuizScore').style.display = "none";
   }
 });
 
@@ -217,6 +215,7 @@ document.getElementById('SentContent').addEventListener('click', () => {
   document.getElementById('LogicQuizSection').style.display = "none";
   document.getElementById('NormalQuizSection').style.display = "none";
   document.getElementById('Quiz').style.display = "none";
+  document.getElementById('QuizScore').style.display = "none";
   }
 });
 
@@ -232,6 +231,7 @@ document.getElementById('StatisticQuiz').addEventListener('click', () => {
   document.getElementById('LogicQuizSection').style.display = "none";
   document.getElementById('NormalQuizSection').style.display = "none";
   document.getElementById('Quiz').style.display = "none";
+  document.getElementById('QuizScore').style.display = "none";
   }
 });
 
@@ -247,6 +247,7 @@ document.getElementById('LogicQuiz').addEventListener('click', () => {
   document.getElementById('LogicQuizSection').style.display = "block";
   document.getElementById('NormalQuizSection').style.display = "none";
   document.getElementById('Quiz').style.display = "none";
+  document.getElementById('QuizScore').style.display = "none";
   }
 });
 
@@ -262,6 +263,7 @@ document.getElementById('NormalQuiz').addEventListener('click', () => {
   document.getElementById('LogicQuizSection').style.display = "none";
   document.getElementById('NormalQuizSection').style.display = "block";
   document.getElementById('Quiz').style.display = "none";
+  document.getElementById('QuizScore').style.display = "none";
   }
 });
 
