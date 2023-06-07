@@ -685,5 +685,9 @@
   #LogicQuizSection {
     margin: 3% 5%;
     width: 88%;
+    max-height: 400px;
+  }
+  #NormalQuizSection {
+    max-height: 400px;
   }
 }
