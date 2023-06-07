@@ -516,8 +516,11 @@
 #Question {
   text-align: center;
   margin-bottom: 6%;
-  font-size: 200%;
-  width: 95%;
+  margin-left: 10%;
+  margin-top: -10%;
+  font-size: 160%;
+  font-weight: bold;
+  width: 80%;
 }
 
 .QuizContainer ul {
@@ -531,9 +534,10 @@
 
 #Submit { 
   position: absolute;
-  bottom: -40%;
-  width: 30%;
-  height: 20%;
+  top: 75%;
+  left: 35%;
+  width: 25%;
+  height: 10%;
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 120%;
@@ -581,6 +585,10 @@
   height: 100%;
   left: 0;
   top: 0;
+}
+
+#Quiz {
+  margin: -2.5% -15%;
 }
 
 @media only screen and (max-width: 450px) {
