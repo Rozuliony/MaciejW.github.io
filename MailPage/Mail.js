@@ -139,7 +139,7 @@ function ChangeArea() {
   document.getElementById('SecondLogin').style.width = window.innerWidth + "px";
   document.getElementById('ActualPage').style.height = window.innerHeight + "px";
   document.getElementById('ActualPage').style.width = window.innerWidth + "px";
-  if(window.innerWidth > 700) {
+  if(window.innerWidth > 500) {
     document.getElementById('NormalQuizSection').style.height = window.innerHeight / 1.5 + "px";
     document.getElementById('NormalQuizSection').style.width = window.innerWidth / 2 + "px";
     document.getElementById('LogicQuizSection').style.height = window.innerHeight / 1.5 + "px";
