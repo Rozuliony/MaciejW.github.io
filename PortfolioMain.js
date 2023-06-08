@@ -86,18 +86,18 @@ function ToggleGmail() {
     }
     if(document.getElementById('GmailContact').innerHTML === "Kliknij aby zobaczyć" || document.getElementById('GmailContact').innerHTML === "Click to view") {
         if(window.innerWidth < 1200) {
-            document.getElementById('GmailContact').innerHTML = "rozuliony2@gmail.com";
-            if(window.innerWidth < 930) {document.getElementById('GmailContact').innerHTML = "rozuliony2 @gmail.com";}
+            document.getElementById('GmailContact').innerHTML = "macwnuk2@gmail.com";
+            if(window.innerWidth < 930) {document.getElementById('GmailContact').innerHTML = "macwnuk2 @gmail.com";}
         } else {
-            document.getElementById('GmailContact').innerHTML = "rozuliony2@gmail.com";
+            document.getElementById('GmailContact').innerHTML = "macwnuk2@gmail.com";
         }
-    } else if (document.getElementById('GmailContact').innerHTML === "rozuliony2@gmail.com" && document.getElementById('Home').innerHTML === "Home"){
+    } else if (document.getElementById('GmailContact').innerHTML === "macwnuk2@gmail.com" && document.getElementById('Home').innerHTML === "Home"){
         document.getElementById('GmailContact').innerHTML = "Click to view";
-    } else if (document.getElementById('GmailContact').innerHTML === "rozuliony2@gmail.com" && document.getElementById('Home').innerHTML === "Główna") {
+    } else if (document.getElementById('GmailContact').innerHTML === "macwnuk2@gmail.com" && document.getElementById('Home').innerHTML === "Główna") {
         document.getElementById('GmailContact').innerHTML = "Kliknij aby zobaczyć";
-    } else if (document.getElementById('GmailContact').innerHTML === "rozuliony2 @gmail.com" && document.getElementById('Home').innerHTML === "Home"){
+    } else if (document.getElementById('GmailContact').innerHTML === "macwnuk2 @gmail.com" && document.getElementById('Home').innerHTML === "Home"){
         document.getElementById('GmailContact').innerHTML = "Click to view";
-    } else if (document.getElementById('GmailContact').innerHTML === "rozuliony2 @gmail.com" && document.getElementById('Home').innerHTML === "Główna") {
+    } else if (document.getElementById('GmailContact').innerHTML === "macwnuk2 @gmail.com" && document.getElementById('Home').innerHTML === "Główna") {
         document.getElementById('GmailContact').innerHTML = "Kliknij aby zobaczyć";
     }
 }
