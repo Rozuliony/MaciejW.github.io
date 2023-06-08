@@ -673,6 +673,10 @@ footer {
         height: 25vh;
         margin: 5%;
     }
+    
+    .Embed img {
+        height: 60%;
+    }
 
     .EmbedText {
         height: 37%;
